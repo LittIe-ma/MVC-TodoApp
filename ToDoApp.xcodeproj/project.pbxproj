@@ -16,6 +16,8 @@
 		30B2CBE3277012BF0007F62C /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2CBE1277012BF0007F62C /* ToDoItemCell.swift */; };
 		30B2CBE4277012BF0007F62C /* ToDoItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B2CBE2277012BF0007F62C /* ToDoItemCell.xib */; };
 		30B2CBE7277013000007F62C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2CBE6277013000007F62C /* Router.swift */; };
+		30B2CBE9277026AB0007F62C /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2CBE8277026AB0007F62C /* RealmData.swift */; };
+		30B2CBEB27703A550007F62C /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2CBEA27703A550007F62C /* Realm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		30B2CBE1277012BF0007F62C /* ToDoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
 		30B2CBE2277012BF0007F62C /* ToDoItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoItemCell.xib; sourceTree = "<group>"; };
 		30B2CBE6277013000007F62C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		30B2CBE8277026AB0007F62C /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		30B2CBEA27703A550007F62C /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		30B2CBDE2770125A0007F62C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30B2CBE8277026AB0007F62C /* RealmData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				30B2CBE6277013000007F62C /* Router.swift */,
+				30B2CBEA27703A550007F62C /* Realm.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -187,8 +193,10 @@
 			files = (
 				30B2CBDD277012450007F62C /* ToDoListViewController.swift in Sources */,
 				30B2CBBF276F6D0E0007F62C /* AppDelegate.swift in Sources */,
+				30B2CBE9277026AB0007F62C /* RealmData.swift in Sources */,
 				30B2CBE7277013000007F62C /* Router.swift in Sources */,
 				30B2CBE3277012BF0007F62C /* ToDoItemCell.swift in Sources */,
+				30B2CBEB27703A550007F62C /* Realm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
