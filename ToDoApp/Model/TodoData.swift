@@ -8,10 +8,6 @@
 import Foundation
 import RealmSwift
 
-struct Items {
-  var items: [RealmData]?
-}
-
-class RealmData {
+final class TodoData: Object {
   @objc dynamic var text: String?
 }

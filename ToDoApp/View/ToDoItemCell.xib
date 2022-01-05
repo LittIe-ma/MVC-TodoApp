@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,51 +15,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="407" height="103"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTB-JA-P0e">
-                        <rect key="frame" x="5" y="5" width="397" height="93"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx7-VU-Y6A">
+                        <rect key="frame" x="8" y="8" width="391" height="87"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lWm-mZ-AWi">
-                                <rect key="frame" x="0.0" y="3.5" width="93" height="86.5"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lWm-mZ-AWi" secondAttribute="height" multiplier="1:1" id="9J3-CO-qfW"/>
-                                </constraints>
-                                <imageReference key="image" image="checkmark" catalog="system" symbolScale="small"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENX-6X-Ubq">
-                                <rect key="frame" x="93" y="0.0" width="10" height="93"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="10" id="IZS-lu-S8I"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-8c-8aZ">
-                                <rect key="frame" x="103" y="0.0" width="294" height="93"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-8c-8aZ">
+                                <rect key="frame" x="0.0" y="0.0" width="391" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                    </stackView>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p1W-8c-8aZ" secondAttribute="trailing" id="Vbz-4S-Y1U"/>
+                            <constraint firstAttribute="bottom" secondItem="p1W-8c-8aZ" secondAttribute="bottom" id="ijx-Qa-KNC"/>
+                            <constraint firstItem="p1W-8c-8aZ" firstAttribute="leading" secondItem="kx7-VU-Y6A" secondAttribute="leading" id="rdw-7d-DgR"/>
+                            <constraint firstItem="p1W-8c-8aZ" firstAttribute="top" secondItem="kx7-VU-Y6A" secondAttribute="top" id="vin-jC-nGV"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="YTB-JA-P0e" secondAttribute="bottom" constant="5" id="4oa-us-jmk"/>
-                    <constraint firstItem="YTB-JA-P0e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Nm9-7D-P8W"/>
-                    <constraint firstAttribute="trailing" secondItem="YTB-JA-P0e" secondAttribute="trailing" constant="5" id="k5W-ws-7jS"/>
-                    <constraint firstItem="YTB-JA-P0e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="liQ-qW-RVI"/>
+                    <constraint firstItem="kx7-VU-Y6A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JIf-To-vAb"/>
+                    <constraint firstAttribute="bottom" secondItem="kx7-VU-Y6A" secondAttribute="bottom" constant="8" id="V7v-0K-3ge"/>
+                    <constraint firstAttribute="trailing" secondItem="kx7-VU-Y6A" secondAttribute="trailing" constant="8" id="so6-jc-tW2"/>
+                    <constraint firstItem="kx7-VU-Y6A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="yYj-x0-ELD"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="checkImageView" destination="lWm-mZ-AWi" id="AJe-gd-FkG"/>
                 <outlet property="todoTextLabel" destination="p1W-8c-8aZ" id="BDZ-4W-PkD"/>
             </connections>
             <point key="canvasLocation" x="148.55072463768118" y="132.92410714285714"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
